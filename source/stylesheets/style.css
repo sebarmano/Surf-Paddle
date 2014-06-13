@@ -1,0 +1,123 @@
+/* ===Header Starts=== */
+
+div#header {
+  background-color: lightblue;
+  height: 400px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+div#header p {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+div#header h1 {
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+  padding-top:100px;
+  margin-bottom: 0;
+  clear:both;
+}
+
+div#header h5 {
+  font-family: arial;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  margin-top:0;
+}
+
+div#header img {
+  float: left;
+}
+
+div#header p {
+  float: left;
+}
+
+div#header ul#nav {
+  float: right;
+  text-decoration: none;
+}
+
+div#header ul#nav li {
+  float: right;
+}
+
+div#header ul#nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+/* ====Content Starts===== */
+
+div#content {
+  max-width:  600px;
+  float: left;
+  background: red;
+  margin-left: 150px;
+}
+
+/* ===Sidebar Starts=== */
+
+div#sidebar {
+  max-width: 300px;
+  float: right;
+  background: green;
+  margin-right: 150px;
+}
+
+/* ===Popular Starts=== */
+
+div#popular {
+  clear:both;
+  position: relative;
+  background: yellow;
+  width: 100%;
+  height: 300px;
+}
+
+div#popular div {
+  background-image: url("../images/240x300.gif");
+  position: absolute;
+  width:240;
+  height: 100%;
+}
+
+div#first_post {
+  background:grey;
+  left: 0px;
+}
+
+div#second_post{
+  background:lightgrey;
+  position: absolute;
+  left: 25%;
+}
+
+div#third_post {
+  background:grey;
+  position: absolute;
+  left: 50%;
+}
+
+div#fourth_post {
+  background:lightgrey;
+  position: absolute;
+  left: 75%;
+}
+
+/* ===Footer Starts=== */
+
+div#footer {
+  clear: both;
+  margin-left: 150px;
+  margin-right: 150px;
+}

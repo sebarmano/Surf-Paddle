@@ -1,0 +1,92 @@
+%div#header
+  = image_tag "ph-logo.jpeg"
+  %p Surf & Paddle Co. Blog
+  %ul#nav
+    %li
+      = link_to 'About', '#'
+    %li
+      = link_to 'Search', '#'
+    = image_tag "search.png"
+  %h1 surf & paddle co.
+  %h5 An Ironyard Academy Project Est. Summer 2014
+
+%div#content
+  %h2 A fantastic engaging headline goes here
+  =image_tag("thumbnail.png")
+  %h6
+  :markdown
+    **Annie Dolphin** on Monday June 7 9.22pm
+  %p
+    = lorem.paragraph
+  %p
+    = lorem.paragraph
+  %quote "This is a pull quote from the article."
+  %p
+    = lorem.paragraph
+  %p
+    = lorem.paragraph
+  %div
+    %ul#social
+      %li
+        = image_tag "comments.jpg"
+        = link_to "Read Comments", "#"
+      %li
+        = image_tag "readlater.jpg"
+        = link_to "Read Later", "#"
+      %li
+        = image_tag "share.jpg"
+        = link_to "Read Comments", "#"
+
+%div#sidebar
+  = image_tag "Thumbnail.png"
+  %h3 Annie Dolphin
+  %ul#social
+    %li
+      = link_to "Twitter", "#"
+    %li.separator
+      = image_tag "separator.png"
+    %li
+      = link_to "Facebook", "#"
+    %li.separator
+      = image_tag "separator.jpg"
+    %li
+      = link_to "Instagram", "#"
+
+  = image_tag "ad.jpg"
+
+  %h4
+    = link_to "About this ad", "#"
+
+  %div
+    %h2 Sidebar section heading
+    %p
+      = lorem.paragraph
+
+%div#popular
+  %div#first_post
+    = link_to 'Another cool post', '#'
+  %div#second_post
+    = link_to 'Post Title', "#"
+  %div#third_post
+    = link_to "Here's another longer post title", '#'
+  %div#fourth_post
+    = link_to "Oh cool a post!"
+
+%div#footer
+  = image_tag 'theironyardlogo.png'
+  %p The Iron Yard 2014, All Rights Reserved
+  %ul
+    %li
+      = link_to 'Nav Item 1', '#'
+    %li.separator
+      = image_tag 'footersep.png'
+    %li
+      = link_to 'Nav Item 2', "#"
+    %li.separator
+      = image_tag 'footersep.png'
+    %li
+      =link_to 'Nav Item 3', '#'
+    %li.separator
+      = image_tag 'footersep.png'
+    %li
+      = link_to 'Nav Item 4', '#'
