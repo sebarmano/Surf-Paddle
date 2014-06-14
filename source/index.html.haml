@@ -1,14 +1,17 @@
-%div#header
-  = image_tag "ph-logo.jpeg"
-  %p Surf & Paddle Co. Blog
-  %ul#nav
-    %li
-      = link_to 'About', '#'
-    %li
-      = link_to 'Search', '#'
-    = image_tag "search.png"
-  %h1 surf & paddle co.
-  %h5 An Ironyard Academy Project Est. Summer 2014
+%div#banner
+  %div#header
+    = image_tag "ph-logo.jpeg"
+    %p Surf & Paddle Co. Blog
+    %ul#nav
+      %li
+        = link_to 'About', '#'
+      %li
+        = link_to 'Search', '#'
+      %li
+        = image_tag "search.png"
+
+    %h1 surf & paddle co.
+    %h5 An Ironyard Academy Project Est. Summer 2014
 
 %div#content
   %h2 A fantastic engaging headline goes here
@@ -63,6 +66,8 @@
       = lorem.paragraph
 
 %div#popular
+  %h2 Most popular posts
+
   %div#first_post
     = link_to 'Another cool post', '#'
   %div#second_post

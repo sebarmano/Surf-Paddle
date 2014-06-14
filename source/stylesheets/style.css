@@ -1,5 +1,11 @@
 /* ===Header Starts=== */
 
+div#banner {
+  position: relative;
+  width: 100%;
+  background-color: blue;
+}
+
 div#header {
   background-color: lightblue;
   height: 400px;
@@ -43,17 +49,21 @@ div#header p {
 
 div#header ul#nav {
   float: right;
-  text-decoration: none;
 }
 
 div#header ul#nav li {
-  float: right;
+  display: inline;
+  padding: 0 10px;
 }
 
 div#header ul#nav li a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
+}
+
+div#header ul#nav li img {
+  width: 16px;
 }
 
 /* ====Content Starts===== */
@@ -65,6 +75,11 @@ div#content {
   margin-left: 150px;
 }
 
+div#content h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
 /* ===Sidebar Starts=== */
 
 div#sidebar {
@@ -74,50 +89,85 @@ div#sidebar {
   margin-right: 150px;
 }
 
+div#sidebar ul li{
+  display: inline;
+}
+
+div#sidebar ul li a {
+  font-size: 12px;
+  color: lightgrey;
+  text-decoration: none;
+}
+
+div#sidebar h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* ===Popular Starts=== */
 
 div#popular {
   clear:both;
-  position: relative;
   background: yellow;
   width: 100%;
-  height: 300px;
-}
+  /* height: 400px; */
+  overflow: auto;
+  }
 
-div#popular div {
+  div#popular h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50;
+  }
+
+  div#popular div {
   background-image: url("../images/240x300.gif");
   position: absolute;
   width:240;
-  height: 100%;
-}
+  height: 300px;
+  }
 
-div#first_post {
+  div#first_post {
   background:grey;
   left: 0px;
-}
+  }
 
-div#second_post{
+  div#second_post{
   background:lightgrey;
   position: absolute;
   left: 25%;
-}
+  }
 
-div#third_post {
+  div#third_post {
   background:grey;
   position: absolute;
   left: 50%;
-}
+  }
 
-div#fourth_post {
+  div#fourth_post {
   background:lightgrey;
   position: absolute;
   left: 75%;
-}
+  }
 
-/* ===Footer Starts=== */
+  /* ===Footer Starts=== */
 
 div#footer {
+  overflow: auto;
   clear: both;
-  margin-left: 150px;
-  margin-right: 150px;
+  background-color:darkblue;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+div#footer ul {
+  float:right
+}
+
+div#footer ul li {
+  display:inline;
+}
+
+div#footer ul li a {
+  text-decoration: none;
 }
