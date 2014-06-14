@@ -1,6 +1,6 @@
 %div#banner
   %div#header
-    = image_tag "ph-logo.jpeg"
+    = image_tag "logo.png"
     %p Surf & Paddle Co. Blog
     %ul#nav
       %li
@@ -15,18 +15,24 @@
 
 %div#content
   %h2 A fantastic engaging headline goes here
-  =image_tag("thumbnail.png")
-  %h6
-  :markdown
-    **Annie Dolphin** on Monday June 7 9.22pm
-  %p
+  =image_tag("dolphin.png")
+
+  -# %p#author FIXME
+  -#   :markdown
+  -#     **Annie Dolphin** on Monday June 7 9.22pm
+
+  <p id="author">
+  <strong>Annie Dolphin</strong> on Monday June 7 9.22pm
+  </p>
+
+  %p.text
     = lorem.paragraph
-  %p
+  %p.text
     = lorem.paragraph
   %quote "This is a pull quote from the article."
-  %p
+  %p.text
     = lorem.paragraph
-  %p
+  %p.text
     = lorem.paragraph
   %div
     %ul#social
@@ -41,7 +47,7 @@
         = link_to "Read Comments", "#"
 
 %div#sidebar
-  = image_tag "Thumbnail.png"
+  = image_tag "dolphin.png"
   %h3 Annie Dolphin
   %ul#social
     %li
@@ -55,7 +61,7 @@
     %li
       = link_to "Instagram", "#"
 
-  = image_tag "ad.jpg"
+  = image_tag "ad_picture.jpg", :id => "ad"
 
   %h4
     = link_to "About this ad", "#"

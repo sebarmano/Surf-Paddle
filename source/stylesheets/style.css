@@ -3,14 +3,20 @@
 div#banner {
   position: relative;
   width: 100%;
-  background-color: blue;
+  background-image: url(../images/wave.jpg);
+  background-size: cover;
 }
 
 div#header {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   height: 400px;
   margin-left: 150px;
   margin-right: 150px;
+  padding-top: 5px;
+}
+
+div#header img {
+  width: 50px;
 }
 
 div#header p {
@@ -26,7 +32,7 @@ div#header h1 {
   text-transform: uppercase;
   text-align: center;
   margin-top: 100px;
-  padding-top:100px;
+  padding-top:50px;
   margin-bottom: 0;
   clear:both;
 }
@@ -45,6 +51,7 @@ div#header img {
 
 div#header p {
   float: left;
+  margin: 17px 10px;
 }
 
 div#header ul#nav {
@@ -71,13 +78,53 @@ div#header ul#nav li img {
 div#content {
   max-width:  600px;
   float: left;
-  background: red;
+  /*background: red; */
   margin-left: 150px;
+  margin-top: 40px;
 }
 
 div#content h2 {
   text-transform: uppercase;
   font-size: 50px;
+  margin: 10px 0;
+}
+
+div#content img {
+  float: left;
+  width: 32px;
+}
+
+div#content p#author {
+  float:left;
+  color: lightgrey;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+div#content p#author strong {
+  color:blue;
+}
+
+div#content p.text{
+  clear: both;
+  color: darkgrey;
+}
+
+div#content quote {
+  text-transform: uppercase;
+  color: darkblue;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 26px;
+  border-left: 3px solid lightgrey;
+}
+
+div#content ul li {
+  display:inline;
+}
+
+div#context ul li a {
+  text-decoration: none;
 }
 
 /* ===Sidebar Starts=== */
@@ -85,8 +132,15 @@ div#content h2 {
 div#sidebar {
   max-width: 300px;
   float: right;
-  background: green;
+  /*background: green;*/
   margin-right: 150px;
+  margin-top: 40px;
+}
+
+div#sidebar > img {
+  display: block;
+  margin: 20px auto;
+  width: 96px;
 }
 
 div#sidebar ul li{
@@ -99,9 +153,35 @@ div#sidebar ul li a {
   text-decoration: none;
 }
 
+div#sidebar img#ad {
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+div#sidebar h4 {
+  text-align: right;
+  margin-top: 5px;
+}
+
+div#sidebar h4 a {
+  color: grey;
+  font-weight: normal;
+}
+
 div#sidebar h3 {
   text-transform: uppercase;
   text-align: center;
+}
+
+div#sidebar div h2 {
+  text-transform: uppercase;
+  color: darkblue;
+  font-size: 20px;
+}
+
+div#sidebar div p {
+  color: lightgrey;
 }
 
 /* ===Popular Starts=== */
@@ -122,32 +202,25 @@ div#popular {
 
   div#popular div {
   background-image: url("../images/240x300.gif");
-  position: absolute;
-  width:240;
+  float:left;
+  width: 25%;
   height: 300px;
   }
 
   div#first_post {
   background:grey;
-  left: 0px;
   }
 
   div#second_post{
   background:lightgrey;
-  position: absolute;
-  left: 25%;
   }
 
   div#third_post {
   background:grey;
-  position: absolute;
-  left: 50%;
   }
 
   div#fourth_post {
   background:lightgrey;
-  position: absolute;
-  left: 75%;
   }
 
   /* ===Footer Starts=== */
@@ -161,7 +234,7 @@ div#footer {
 }
 
 div#footer ul {
-  float:right
+  float: right;
 }
 
 div#footer ul li {
