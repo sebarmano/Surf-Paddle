@@ -7,8 +7,6 @@
         = link_to 'About', '#'
       %li
         = link_to 'Search', '#'
-      %li
-        = image_tag "search.png"
 
     %h1 surf & paddle co.
     %h5 An Ironyard Academy Project Est. Summer 2014
@@ -27,8 +25,10 @@
 
   %p.text
     = lorem.paragraph
-  %p.text
-    = lorem.paragraph
+  <p class="text">
+  Sed tenetur quia repellendus asperiores officia odit vero natus non rerum ipsa <em>voluptatem harum quae.</em>
+  </p>
+
   %quote "This is a pull quote from the article."
   %p.text
     = lorem.paragraph
@@ -37,29 +37,26 @@
   %div
     %ul#social
       %li
-        = image_tag "comments.jpg"
+        = image_tag "comment-icon.png"
         = link_to "Read Comments", "#"
       %li
-        = image_tag "readlater.jpg"
+        = image_tag "read-icon.png"
         = link_to "Read Later", "#"
       %li
-        = image_tag "share.jpg"
-        = link_to "Read Comments", "#"
+        = image_tag "share-icon.png"
+        = link_to "Share This Post", "#"
 
 %div#sidebar
-  = image_tag "dolphin.png"
-  %h3 Annie Dolphin
-  %ul#social
-    %li
-      = link_to "Twitter", "#"
-    %li.separator
-      = image_tag "separator.png"
-    %li
-      = link_to "Facebook", "#"
-    %li.separator
-      = image_tag "separator.jpg"
-    %li
-      = link_to "Instagram", "#"
+  %div#profile  
+    = image_tag "dolphin.png"
+    %h3 Annie Dolphin
+    %ul#social
+      %li
+        = link_to "Twitter", "#"
+      %li
+        = link_to "Facebook", "#"
+      %li
+        = link_to "Instagram", "#"
 
   = image_tag "ad_picture.jpg", :id => "ad"
 
@@ -69,7 +66,7 @@
   %div
     %h2 Sidebar section heading
     %p
-      = lorem.paragraph
+      = lorem.sentences 4
 
 %div#popular
   %h2 Most popular posts
@@ -84,20 +81,14 @@
     = link_to "Oh cool a post!"
 
 %div#footer
-  = image_tag 'theironyardlogo.png'
-  %p The Iron Yard 2014, All Rights Reserved
+  = image_tag 'TIY_logo.png'
+  %p The Iron Yard Copyright 2014, All Rights Reserved
   %ul
     %li
       = link_to 'Nav Item 1', '#'
-    %li.separator
-      = image_tag 'footersep.png'
     %li
       = link_to 'Nav Item 2', "#"
-    %li.separator
-      = image_tag 'footersep.png'
     %li
       =link_to 'Nav Item 3', '#'
-    %li.separator
-      = image_tag 'footersep.png'
     %li
       = link_to 'Nav Item 4', '#'
